@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express Contact</title>
+   
+</head>
+
+<body>
+   <div>
+    <div>
+        <h1>Selamat datang di Express Contact</h1>
+    </div>
+    <div>
+        <p>Hallo <%= user.name %> </p>
+        <p>Terima kasih telah melakukan registrasi di Express Contact. 
+            Untuk mengaktifkan akun silahkan gunakan OTP kode ini
+        </p>
+        <h2><%= activationCode %> </h2>
+        <p>Kode Tersebut akan kadaluarsa dalam waktu 5 menit</p>
+        <h1>Kami ucapkan selamat datang di Express Contact</h1>
+    </div>
+   </div>
+</body>
+
+</html>
