@@ -9,20 +9,13 @@ import cors from 'cors'
 
 
 export const app = express()
-const limiter = rateLimit({
-    windowMs: 15 * 60 * 1000, // 15 menit
-    max: 100, // Jumlah maksimum percobaan hit api
-    message: 'Terlalu banyak percobaan, coba lagi nanti.',
-})
+
 //untuk request dengan json
 app.use(express.json({limit : '50mb'}))
 
 //cors
 app.use(cors())
 
-
-//rate limit
-app.use(limiter)
 
 //cek api
 app.get('/testing',(req : Request, res: Response, next : NextFunction)=>{
