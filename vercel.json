@@ -2,7 +2,7 @@
   "rewrites": [{ "source": "/(.*)", "destination": "/api" }],
   "functions": {
     "/.ts": {
-      "maxDuration": 20
+      "maxDuration": 10
     }
   }
 }
